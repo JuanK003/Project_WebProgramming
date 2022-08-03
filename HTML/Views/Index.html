@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/CSS/Style.css">
     <title>Universidad Mesoamericana</title>
 </head>
@@ -12,16 +12,33 @@
         <header>
             <input type="checkbox" name="" class="btn"/>
             <div class="nav">
-                <ol>
-                    <li><a href="" target="_blank">Inicio</a></li>
-                    <li><a href="" target="_self">Noticias</a></li>
-                    <li><a href="" target="_self">Organización</a></li>
-                    <li><a href="" target="_self">Académico</a></li>
-                    <li><a href="" target="_self">Admisiones</a></li>
-                    <li><a href="" target="_self">Estudiantes</a></li>
-                    <li><a href="" target="_self">Docentes</a></li>
-                    <li><a href="" target="_self">Contáctanos</a></li>
-                </ol>
+                <ul class="navbar-items-container">
+                    <li>
+                        <a href="" class="navbar__link" target="_blank">Inicio</a></li>
+                    <li>
+                        <a href="" class="navbar__link" target="_self">Noticias</a></li>
+                    <li>
+                        <a href="" class="navbar__link" target="_self">Organización</a></li>
+                    <li>
+                        <a href="" class="navbar__link" target="_self">Académico</a></li>
+                    <li>
+                        <a href="" class="navbar__link" target="_self">Admisiones</a></li>
+                    <li>
+                        <a href="" class="navbar__link" target="_self">Estudiantes</a></li>
+                    <li class="nav-item">
+                        <a href="" class="navbar__link" target="_self">Docentes</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="navbar__link-dropdown" target="_blank">Aula Virtual</a></li>
+                            <li><a href="" class="navbar__link-dropdown" target="_blank">Sitio de Docentes</a></li>
+                            <li><a href="" class="navbar__link-dropdown" target="_blank">Correo Institucional</a></li>
+                            <li><a href="" class="navbar__link-dropdown" target="_blank">Técnicas de Estudio</a></li>
+                            <li><a href="" class="navbar__link-dropdown" target="_blank">Revista Explora</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="navbar__link" target="_self">Contáctanos</a>
+                    </li>
+                </ul>
             </div>
         </header>
         <hr>

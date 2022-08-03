@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --white: #fff;
+    --meso-green: #29603E;
+}
+
 body{
     background-color: FFFFFF;
     background-repeat: no-repeat;
@@ -25,6 +30,7 @@ header {
     align-items: center;
 }
 
+
 .nav {
     display: flex;
     align-items: center;
@@ -34,16 +40,16 @@ hr {
     background-color: #E5E5E5;
 }
 
-.nav ol {
+.navbar-items-container {
     display: flex;
     list-style: none;
 }
 
-.nav ol li {
+.nav ul li {
     margin: lem;
 }
 
-.nav ol li a {
+.navbar__link {
     text-decoration: none;
     padding: 0.2em 1.2em 0.9em 1.2em;
     border-radius: 10px 10px 0 0;
@@ -53,7 +59,7 @@ hr {
     z-index: 1;
 }
 
-.nav ol li a::before {
+.nav ul li a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -66,12 +72,38 @@ hr {
     transform: all .4s;
 }
 
-.nav ol li a:hover::before {
+.nav ul li a:hover::before {
     transform: scaleY(1.1);
 }
 
-.nav ol li a:hover{
+.nav ul li a:hover{
     color: #94B09F;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    top: 100%;
+    left: 0px;
+    padding: 10px 16px;
+    list-style: none;
+    border-top: #29603E solid 3px;
+}
+
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar__link-dropdown {
+    color: var(--meso-green);
+    text-decoration: none;
+    padding: 8px 0px;
 }
 
 .btn {
@@ -124,7 +156,7 @@ hr {
 }
 
 @media (max-width: 700px) {
-    .nav ol {
+    .nav ul {
         flex-direction: column;
         text-align: center;
     }
